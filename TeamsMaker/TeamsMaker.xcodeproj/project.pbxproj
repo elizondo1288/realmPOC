@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		201E3D3E1F8FE9C8001ED8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D3D1F8FE9C8001ED8D0 /* AppDelegate.swift */; };
+		201E3D431F8FE9C9001ED8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201E3D411F8FE9C9001ED8D0 /* Main.storyboard */; };
+		201E3D451F8FE9C9001ED8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201E3D441F8FE9C9001ED8D0 /* Assets.xcassets */; };
+		201E3D481F8FE9C9001ED8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201E3D461F8FE9C9001ED8D0 /* LaunchScreen.storyboard */; };
+		201E3D531F8FE9C9001ED8D0 /* TeamsMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D521F8FE9C9001ED8D0 /* TeamsMakerTests.swift */; };
+		201E3D5E1F8FE9C9001ED8D0 /* TeamsMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D5D1F8FE9C9001ED8D0 /* TeamsMakerUITests.swift */; };
+		201E3D6D1F900487001ED8D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D6C1F900487001ED8D0 /* HomeViewController.swift */; };
+		201E3D6E1F900487001ED8D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D6C1F900487001ED8D0 /* HomeViewController.swift */; };
+		201E3D701F9004E8001ED8D0 /* HomeOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D6F1F9004E8001ED8D0 /* HomeOptionsCell.swift */; };
+		201E3D711F9004E8001ED8D0 /* HomeOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D6F1F9004E8001ED8D0 /* HomeOptionsCell.swift */; };
+		201E3D741F9006DE001ED8D0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D731F9006DE001ED8D0 /* Member.swift */; };
+		201E3D751F9006DE001ED8D0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D731F9006DE001ED8D0 /* Member.swift */; };
+		201E3D771F9007A1001ED8D0 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D761F9007A1001ED8D0 /* Team.swift */; };
+		201E3D781F9007A1001ED8D0 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D761F9007A1001ED8D0 /* Team.swift */; };
+		201E3D7A1F90096C001ED8D0 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D791F90096C001ED8D0 /* MenuOptions.swift */; };
+		201E3D7B1F90096C001ED8D0 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D791F90096C001ED8D0 /* MenuOptions.swift */; };
+		201E3D7E1F91721F001ED8D0 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */; };
+		201E3D7F1F91721F001ED8D0 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */; };
+		201E3D821F91770C001ED8D0 /* MemberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D811F91770C001ED8D0 /* MemberManager.swift */; };
+		201E3D831F91770C001ED8D0 /* MemberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D811F91770C001ED8D0 /* MemberManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		201E3D4F1F8FE9C9001ED8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201E3D321F8FE9C8001ED8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201E3D391F8FE9C8001ED8D0;
+			remoteInfo = TeamsMaker;
+		};
+		201E3D5A1F8FE9C9001ED8D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201E3D321F8FE9C8001ED8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201E3D391F8FE9C8001ED8D0;
+			remoteInfo = TeamsMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201E3D3A1F8FE9C8001ED8D0 /* TeamsMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamsMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		201E3D3D1F8FE9C8001ED8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		201E3D421F8FE9C9001ED8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		201E3D441F8FE9C9001ED8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		201E3D471F8FE9C9001ED8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		201E3D491F8FE9C9001ED8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201E3D4E1F8FE9C9001ED8D0 /* TeamsMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamsMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201E3D521F8FE9C9001ED8D0 /* TeamsMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsMakerTests.swift; sourceTree = "<group>"; };
+		201E3D541F8FE9C9001ED8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201E3D591F8FE9C9001ED8D0 /* TeamsMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamsMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201E3D5D1F8FE9C9001ED8D0 /* TeamsMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsMakerUITests.swift; sourceTree = "<group>"; };
+		201E3D5F1F8FE9C9001ED8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201E3D6C1F900487001ED8D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
+		201E3D6F1F9004E8001ED8D0 /* HomeOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeOptionsCell.swift; path = Home/HomeOptionsCell.swift; sourceTree = "<group>"; };
+		201E3D731F9006DE001ED8D0 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		201E3D761F9007A1001ED8D0 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		201E3D791F90096C001ED8D0 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
+		201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
+		201E3D811F91770C001ED8D0 /* MemberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201E3D371F8FE9C8001ED8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E3D4B1F8FE9C9001ED8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E3D561F8FE9C9001ED8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201E3D311F8FE9C8001ED8D0 = {
+			isa = PBXGroup;
+			children = (
+				201E3D3C1F8FE9C8001ED8D0 /* TeamsMaker */,
+				201E3D511F8FE9C9001ED8D0 /* TeamsMakerTests */,
+				201E3D5C1F8FE9C9001ED8D0 /* TeamsMakerUITests */,
+				201E3D3B1F8FE9C8001ED8D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		201E3D3B1F8FE9C8001ED8D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D3A1F8FE9C8001ED8D0 /* TeamsMaker.app */,
+				201E3D4E1F8FE9C9001ED8D0 /* TeamsMakerTests.xctest */,
+				201E3D591F8FE9C9001ED8D0 /* TeamsMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		201E3D3C1F8FE9C8001ED8D0 /* TeamsMaker */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D801F9176ED001ED8D0 /* MemberManager */,
+				201E3D7C1F9171FD001ED8D0 /* AddMembers */,
+				201E3D721F9006BB001ED8D0 /* Entities */,
+				201E3D6B1F900459001ED8D0 /* Home */,
+				201E3D411F8FE9C9001ED8D0 /* Main.storyboard */,
+				201E3D3D1F8FE9C8001ED8D0 /* AppDelegate.swift */,
+				201E3D441F8FE9C9001ED8D0 /* Assets.xcassets */,
+				201E3D461F8FE9C9001ED8D0 /* LaunchScreen.storyboard */,
+				201E3D491F8FE9C9001ED8D0 /* Info.plist */,
+			);
+			path = TeamsMaker;
+			sourceTree = "<group>";
+		};
+		201E3D511F8FE9C9001ED8D0 /* TeamsMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D521F8FE9C9001ED8D0 /* TeamsMakerTests.swift */,
+				201E3D541F8FE9C9001ED8D0 /* Info.plist */,
+			);
+			path = TeamsMakerTests;
+			sourceTree = "<group>";
+		};
+		201E3D5C1F8FE9C9001ED8D0 /* TeamsMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D5D1F8FE9C9001ED8D0 /* TeamsMakerUITests.swift */,
+				201E3D5F1F8FE9C9001ED8D0 /* Info.plist */,
+			);
+			path = TeamsMakerUITests;
+			sourceTree = "<group>";
+		};
+		201E3D6B1F900459001ED8D0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D6C1F900487001ED8D0 /* HomeViewController.swift */,
+				201E3D6F1F9004E8001ED8D0 /* HomeOptionsCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		201E3D721F9006BB001ED8D0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D731F9006DE001ED8D0 /* Member.swift */,
+				201E3D761F9007A1001ED8D0 /* Team.swift */,
+				201E3D791F90096C001ED8D0 /* MenuOptions.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		201E3D7C1F9171FD001ED8D0 /* AddMembers */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */,
+			);
+			path = AddMembers;
+			sourceTree = "<group>";
+		};
+		201E3D801F9176ED001ED8D0 /* MemberManager */ = {
+			isa = PBXGroup;
+			children = (
+				201E3D811F91770C001ED8D0 /* MemberManager.swift */,
+			);
+			path = MemberManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		201E3D391F8FE9C8001ED8D0 /* TeamsMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201E3D621F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMaker" */;
+			buildPhases = (
+				201E3D361F8FE9C8001ED8D0 /* Sources */,
+				201E3D371F8FE9C8001ED8D0 /* Frameworks */,
+				201E3D381F8FE9C8001ED8D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeamsMaker;
+			productName = TeamsMaker;
+			productReference = 201E3D3A1F8FE9C8001ED8D0 /* TeamsMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		201E3D4D1F8FE9C9001ED8D0 /* TeamsMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201E3D651F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMakerTests" */;
+			buildPhases = (
+				201E3D4A1F8FE9C9001ED8D0 /* Sources */,
+				201E3D4B1F8FE9C9001ED8D0 /* Frameworks */,
+				201E3D4C1F8FE9C9001ED8D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201E3D501F8FE9C9001ED8D0 /* PBXTargetDependency */,
+			);
+			name = TeamsMakerTests;
+			productName = TeamsMakerTests;
+			productReference = 201E3D4E1F8FE9C9001ED8D0 /* TeamsMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		201E3D581F8FE9C9001ED8D0 /* TeamsMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201E3D681F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMakerUITests" */;
+			buildPhases = (
+				201E3D551F8FE9C9001ED8D0 /* Sources */,
+				201E3D561F8FE9C9001ED8D0 /* Frameworks */,
+				201E3D571F8FE9C9001ED8D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201E3D5B1F8FE9C9001ED8D0 /* PBXTargetDependency */,
+			);
+			name = TeamsMakerUITests;
+			productName = TeamsMakerUITests;
+			productReference = 201E3D591F8FE9C9001ED8D0 /* TeamsMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		201E3D321F8FE9C8001ED8D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Avantica Technologies";
+				TargetAttributes = {
+					201E3D391F8FE9C8001ED8D0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					201E3D4D1F8FE9C9001ED8D0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 201E3D391F8FE9C8001ED8D0;
+					};
+					201E3D581F8FE9C9001ED8D0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 201E3D391F8FE9C8001ED8D0;
+					};
+				};
+			};
+			buildConfigurationList = 201E3D351F8FE9C8001ED8D0 /* Build configuration list for PBXProject "TeamsMaker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 201E3D311F8FE9C8001ED8D0;
+			productRefGroup = 201E3D3B1F8FE9C8001ED8D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201E3D391F8FE9C8001ED8D0 /* TeamsMaker */,
+				201E3D4D1F8FE9C9001ED8D0 /* TeamsMakerTests */,
+				201E3D581F8FE9C9001ED8D0 /* TeamsMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		201E3D381F8FE9C8001ED8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201E3D481F8FE9C9001ED8D0 /* LaunchScreen.storyboard in Resources */,
+				201E3D451F8FE9C9001ED8D0 /* Assets.xcassets in Resources */,
+				201E3D431F8FE9C9001ED8D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E3D4C1F8FE9C9001ED8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E3D571F8FE9C9001ED8D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201E3D361F8FE9C8001ED8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201E3D7E1F91721F001ED8D0 /* AddMemberViewController.swift in Sources */,
+				201E3D821F91770C001ED8D0 /* MemberManager.swift in Sources */,
+				201E3D3E1F8FE9C8001ED8D0 /* AppDelegate.swift in Sources */,
+				201E3D701F9004E8001ED8D0 /* HomeOptionsCell.swift in Sources */,
+				201E3D6D1F900487001ED8D0 /* HomeViewController.swift in Sources */,
+				201E3D771F9007A1001ED8D0 /* Team.swift in Sources */,
+				201E3D741F9006DE001ED8D0 /* Member.swift in Sources */,
+				201E3D7A1F90096C001ED8D0 /* MenuOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E3D4A1F8FE9C9001ED8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201E3D7F1F91721F001ED8D0 /* AddMemberViewController.swift in Sources */,
+				201E3D831F91770C001ED8D0 /* MemberManager.swift in Sources */,
+				201E3D531F8FE9C9001ED8D0 /* TeamsMakerTests.swift in Sources */,
+				201E3D711F9004E8001ED8D0 /* HomeOptionsCell.swift in Sources */,
+				201E3D6E1F900487001ED8D0 /* HomeViewController.swift in Sources */,
+				201E3D781F9007A1001ED8D0 /* Team.swift in Sources */,
+				201E3D751F9006DE001ED8D0 /* Member.swift in Sources */,
+				201E3D7B1F90096C001ED8D0 /* MenuOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201E3D551F8FE9C9001ED8D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201E3D5E1F8FE9C9001ED8D0 /* TeamsMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		201E3D501F8FE9C9001ED8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201E3D391F8FE9C8001ED8D0 /* TeamsMaker */;
+			targetProxy = 201E3D4F1F8FE9C9001ED8D0 /* PBXContainerItemProxy */;
+		};
+		201E3D5B1F8FE9C9001ED8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201E3D391F8FE9C8001ED8D0 /* TeamsMaker */;
+			targetProxy = 201E3D5A1F8FE9C9001ED8D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		201E3D411F8FE9C9001ED8D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201E3D421F8FE9C9001ED8D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		201E3D461F8FE9C9001ED8D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201E3D471F8FE9C9001ED8D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		201E3D601F8FE9C9001ED8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		201E3D611F8FE9C9001ED8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201E3D631F8FE9C9001ED8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeamsMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avanticatechnologies.TeamsMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		201E3D641F8FE9C9001ED8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeamsMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avanticatechnologies.TeamsMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		201E3D661F8FE9C9001ED8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeamsMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = avanticatechnologies.TeamsMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeamsMaker.app/TeamsMaker";
+			};
+			name = Debug;
+		};
+		201E3D671F8FE9C9001ED8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeamsMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = avanticatechnologies.TeamsMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeamsMaker.app/TeamsMaker";
+			};
+			name = Release;
+		};
+		201E3D691F8FE9C9001ED8D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeamsMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = avanticatechnologies.TeamsMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeamsMaker;
+			};
+			name = Debug;
+		};
+		201E3D6A1F8FE9C9001ED8D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TeamsMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = avanticatechnologies.TeamsMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeamsMaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201E3D351F8FE9C8001ED8D0 /* Build configuration list for PBXProject "TeamsMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201E3D601F8FE9C9001ED8D0 /* Debug */,
+				201E3D611F8FE9C9001ED8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201E3D621F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201E3D631F8FE9C9001ED8D0 /* Debug */,
+				201E3D641F8FE9C9001ED8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201E3D651F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201E3D661F8FE9C9001ED8D0 /* Debug */,
+				201E3D671F8FE9C9001ED8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201E3D681F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201E3D691F8FE9C9001ED8D0 /* Debug */,
+				201E3D6A1F8FE9C9001ED8D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 201E3D321F8FE9C8001ED8D0 /* Project object */;
+}
