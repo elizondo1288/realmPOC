@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menuOptions.append(MenuOptions("Insert Member",.addMember))
+        menuOptions.append(MenuOptions("Members",.addMember))
         menuOptions.append(MenuOptions("Create Teams",.createTeams))
         menuOptions.append(MenuOptions("Make Teams",.shuffleTeams))
         self.collectionView.delegate = self

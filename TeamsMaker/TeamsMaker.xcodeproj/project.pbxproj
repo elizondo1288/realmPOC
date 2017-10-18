@@ -27,6 +27,13 @@
 		201E3D7F1F91721F001ED8D0 /* AddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */; };
 		201E3D821F91770C001ED8D0 /* MemberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D811F91770C001ED8D0 /* MemberManager.swift */; };
 		201E3D831F91770C001ED8D0 /* MemberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D811F91770C001ED8D0 /* MemberManager.swift */; };
+		201E3D871F97BEC3001ED8D0 /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D861F97BEC3001ED8D0 /* MembersTableViewController.swift */; };
+		201E3D881F97BEC3001ED8D0 /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D861F97BEC3001ED8D0 /* MembersTableViewController.swift */; };
+		201E3D8A1F97C37C001ED8D0 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D891F97C37C001ED8D0 /* MemberTableViewCell.swift */; };
+		201E3D8B1F97C37C001ED8D0 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E3D891F97C37C001ED8D0 /* MemberTableViewCell.swift */; };
+		8D1EA15D61505CCB1E840E8B /* Pods_TeamsMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646E69F6401C72719D6FCB07 /* Pods_TeamsMaker.framework */; };
+		937FE1D97356C697A82182EA /* Pods_TeamsMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A86F69EA1ED5D1A1754978C /* Pods_TeamsMakerUITests.framework */; };
+		D9D765B2F420D960B5F1B674 /* Pods_TeamsMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613EE2D94266E03E5B9BD822 /* Pods_TeamsMakerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +73,17 @@
 		201E3D791F90096C001ED8D0 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
 		201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberViewController.swift; sourceTree = "<group>"; };
 		201E3D811F91770C001ED8D0 /* MemberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberManager.swift; sourceTree = "<group>"; };
+		201E3D861F97BEC3001ED8D0 /* MembersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersTableViewController.swift; sourceTree = "<group>"; };
+		201E3D891F97C37C001ED8D0 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		3C0344F5EAA3BD06037AA44F /* Pods-TeamsMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamsMakerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamsMakerUITests/Pods-TeamsMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		613EE2D94266E03E5B9BD822 /* Pods_TeamsMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamsMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		646E69F6401C72719D6FCB07 /* Pods_TeamsMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamsMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CE1F45404A8221F033AB7E /* Pods-TeamsMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamsMakerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamsMakerUITests/Pods-TeamsMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		73CB2C03C470D5BB4812CDBE /* Pods-TeamsMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamsMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamsMaker/Pods-TeamsMaker.release.xcconfig"; sourceTree = "<group>"; };
+		7A86F69EA1ED5D1A1754978C /* Pods_TeamsMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamsMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A35E1497459ACB2632D7029 /* Pods-TeamsMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamsMakerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamsMakerTests/Pods-TeamsMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E31E2F7D384CD485B7F3DE37 /* Pods-TeamsMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamsMakerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamsMakerTests/Pods-TeamsMakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF3AE0FDBBFAB9141EA6C340 /* Pods-TeamsMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamsMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamsMaker/Pods-TeamsMaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1EA15D61505CCB1E840E8B /* Pods_TeamsMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D765B2F420D960B5F1B674 /* Pods_TeamsMakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +107,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937FE1D97356C697A82182EA /* Pods_TeamsMakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C8FA06B598BB283A1EAD95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF3AE0FDBBFAB9141EA6C340 /* Pods-TeamsMaker.debug.xcconfig */,
+				73CB2C03C470D5BB4812CDBE /* Pods-TeamsMaker.release.xcconfig */,
+				9A35E1497459ACB2632D7029 /* Pods-TeamsMakerTests.debug.xcconfig */,
+				E31E2F7D384CD485B7F3DE37 /* Pods-TeamsMakerTests.release.xcconfig */,
+				3C0344F5EAA3BD06037AA44F /* Pods-TeamsMakerUITests.debug.xcconfig */,
+				65CE1F45404A8221F033AB7E /* Pods-TeamsMakerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		201E3D311F8FE9C8001ED8D0 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +134,8 @@
 				201E3D511F8FE9C9001ED8D0 /* TeamsMakerTests */,
 				201E3D5C1F8FE9C9001ED8D0 /* TeamsMakerUITests */,
 				201E3D3B1F8FE9C8001ED8D0 /* Products */,
+				00C8FA06B598BB283A1EAD95 /* Pods */,
+				3CD282500A5EDA75018A1FB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,10 +152,10 @@
 		201E3D3C1F8FE9C8001ED8D0 /* TeamsMaker */ = {
 			isa = PBXGroup;
 			children = (
-				201E3D801F9176ED001ED8D0 /* MemberManager */,
-				201E3D7C1F9171FD001ED8D0 /* AddMembers */,
-				201E3D721F9006BB001ED8D0 /* Entities */,
+				201E3D841F97AD04001ED8D0 /* RealmEntities */,
+				201E3D851F97BE83001ED8D0 /* Members Controllers */,
 				201E3D6B1F900459001ED8D0 /* Home */,
+				201E3D721F9006BB001ED8D0 /* Entities */,
 				201E3D411F8FE9C9001ED8D0 /* Main.storyboard */,
 				201E3D3D1F8FE9C8001ED8D0 /* AppDelegate.swift */,
 				201E3D441F8FE9C9001ED8D0 /* Assets.xcassets */,
@@ -159,27 +195,39 @@
 		201E3D721F9006BB001ED8D0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				201E3D731F9006DE001ED8D0 /* Member.swift */,
-				201E3D761F9007A1001ED8D0 /* Team.swift */,
 				201E3D791F90096C001ED8D0 /* MenuOptions.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		201E3D7C1F9171FD001ED8D0 /* AddMembers */ = {
+		201E3D841F97AD04001ED8D0 /* RealmEntities */ = {
 			isa = PBXGroup;
 			children = (
-				201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */,
+				201E3D731F9006DE001ED8D0 /* Member.swift */,
+				201E3D761F9007A1001ED8D0 /* Team.swift */,
 			);
-			path = AddMembers;
+			path = RealmEntities;
 			sourceTree = "<group>";
 		};
-		201E3D801F9176ED001ED8D0 /* MemberManager */ = {
+		201E3D851F97BE83001ED8D0 /* Members Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				201E3D811F91770C001ED8D0 /* MemberManager.swift */,
+				201E3D7D1F91721F001ED8D0 /* AddMemberViewController.swift */,
+				201E3D861F97BEC3001ED8D0 /* MembersTableViewController.swift */,
+				201E3D891F97C37C001ED8D0 /* MemberTableViewCell.swift */,
 			);
-			path = MemberManager;
+			path = "Members Controllers";
+			sourceTree = "<group>";
+		};
+		3CD282500A5EDA75018A1FB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				646E69F6401C72719D6FCB07 /* Pods_TeamsMaker.framework */,
+				613EE2D94266E03E5B9BD822 /* Pods_TeamsMakerTests.framework */,
+				7A86F69EA1ED5D1A1754978C /* Pods_TeamsMakerUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 201E3D621F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMaker" */;
 			buildPhases = (
+				9B71CAD0473750E85B34DD8F /* [CP] Check Pods Manifest.lock */,
 				201E3D361F8FE9C8001ED8D0 /* Sources */,
 				201E3D371F8FE9C8001ED8D0 /* Frameworks */,
 				201E3D381F8FE9C8001ED8D0 /* Resources */,
+				3C55E70F3707B96F22222C14 /* [CP] Embed Pods Frameworks */,
+				3EA255F14A7D93ED888F1FBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 201E3D651F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMakerTests" */;
 			buildPhases = (
+				FB47B39E87BC8BFBEB4BAA1D /* [CP] Check Pods Manifest.lock */,
 				201E3D4A1F8FE9C9001ED8D0 /* Sources */,
 				201E3D4B1F8FE9C9001ED8D0 /* Frameworks */,
 				201E3D4C1F8FE9C9001ED8D0 /* Resources */,
+				878C1B40AAE935B2E97F04AB /* [CP] Embed Pods Frameworks */,
+				C67142C0374ED29FF3E1CE02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 201E3D681F8FE9C9001ED8D0 /* Build configuration list for PBXNativeTarget "TeamsMakerUITests" */;
 			buildPhases = (
+				0A77BA9D401F291D8E8C2E3E /* [CP] Check Pods Manifest.lock */,
 				201E3D551F8FE9C9001ED8D0 /* Sources */,
 				201E3D561F8FE9C9001ED8D0 /* Frameworks */,
 				201E3D571F8FE9C9001ED8D0 /* Resources */,
+				260312071C34A8ACD2D14521 /* [CP] Embed Pods Frameworks */,
+				1C89461A86B7D7E9E1917856 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +368,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A77BA9D401F291D8E8C2E3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1C89461A86B7D7E9E1917856 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamsMakerUITests/Pods-TeamsMakerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		260312071C34A8ACD2D14521 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamsMakerUITests/Pods-TeamsMakerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C55E70F3707B96F22222C14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamsMaker/Pods-TeamsMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EA255F14A7D93ED888F1FBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamsMaker/Pods-TeamsMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		878C1B40AAE935B2E97F04AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamsMakerTests/Pods-TeamsMakerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B71CAD0473750E85B34DD8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C67142C0374ED29FF3E1CE02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamsMakerTests/Pods-TeamsMakerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB47B39E87BC8BFBEB4BAA1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		201E3D361F8FE9C8001ED8D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -320,6 +515,8 @@
 				201E3D821F91770C001ED8D0 /* MemberManager.swift in Sources */,
 				201E3D3E1F8FE9C8001ED8D0 /* AppDelegate.swift in Sources */,
 				201E3D701F9004E8001ED8D0 /* HomeOptionsCell.swift in Sources */,
+				201E3D871F97BEC3001ED8D0 /* MembersTableViewController.swift in Sources */,
+				201E3D8A1F97C37C001ED8D0 /* MemberTableViewCell.swift in Sources */,
 				201E3D6D1F900487001ED8D0 /* HomeViewController.swift in Sources */,
 				201E3D771F9007A1001ED8D0 /* Team.swift in Sources */,
 				201E3D741F9006DE001ED8D0 /* Member.swift in Sources */,
@@ -335,6 +532,8 @@
 				201E3D831F91770C001ED8D0 /* MemberManager.swift in Sources */,
 				201E3D531F8FE9C9001ED8D0 /* TeamsMakerTests.swift in Sources */,
 				201E3D711F9004E8001ED8D0 /* HomeOptionsCell.swift in Sources */,
+				201E3D881F97BEC3001ED8D0 /* MembersTableViewController.swift in Sources */,
+				201E3D8B1F97C37C001ED8D0 /* MemberTableViewCell.swift in Sources */,
 				201E3D6E1F900487001ED8D0 /* HomeViewController.swift in Sources */,
 				201E3D781F9007A1001ED8D0 /* Team.swift in Sources */,
 				201E3D751F9006DE001ED8D0 /* Member.swift in Sources */,
@@ -494,6 +693,7 @@
 		};
 		201E3D631F8FE9C9001ED8D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3AE0FDBBFAB9141EA6C340 /* Pods-TeamsMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +708,7 @@
 		};
 		201E3D641F8FE9C9001ED8D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CB2C03C470D5BB4812CDBE /* Pods-TeamsMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +723,7 @@
 		};
 		201E3D661F8FE9C9001ED8D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A35E1497459ACB2632D7029 /* Pods-TeamsMakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +740,7 @@
 		};
 		201E3D671F8FE9C9001ED8D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E31E2F7D384CD485B7F3DE37 /* Pods-TeamsMakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +757,7 @@
 		};
 		201E3D691F8FE9C9001ED8D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C0344F5EAA3BD06037AA44F /* Pods-TeamsMakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -569,6 +773,7 @@
 		};
 		201E3D6A1F8FE9C9001ED8D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65CE1F45404A8221F033AB7E /* Pods-TeamsMakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

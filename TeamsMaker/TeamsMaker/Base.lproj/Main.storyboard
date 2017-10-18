@@ -81,12 +81,77 @@
                     <navigationItem key="navigationItem" title="Teams Maker" id="NxE-6d-aKV"/>
                     <connections>
                         <outlet property="collectionView" destination="CpN-AQ-lMy" id="WTj-yJ-Nl7"/>
-                        <segue destination="Ly6-IJ-mYI" kind="show" identifier="addMemberSegue" id="L8U-A8-E5I"/>
+                        <segue destination="9Pa-1y-Lhl" kind="show" identifier="addMemberSegue" id="P1a-ML-GPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="479.19999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--All Members-->
+        <scene sceneID="FfP-Fc-HZd">
+            <objects>
+                <tableViewController id="9Pa-1y-Lhl" customClass="MembersTableViewController" customModule="TeamsMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FPS-q9-rU5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberCell" rowHeight="94" id="NgG-9a-x8g" customClass="MemberTableViewCell" customModule="TeamsMaker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NgG-9a-x8g" id="pID-pJ-9uY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="twq-RD-azg">
+                                            <rect key="frame" x="8" y="15" width="162" height="61"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN2-E1-RDy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PI-ej-hZV">
+                                                    <rect key="frame" x="0.0" y="40.5" width="162" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="twq-RD-azg" secondAttribute="bottom" constant="9.5" id="Edw-dM-Ipv"/>
+                                        <constraint firstItem="twq-RD-azg" firstAttribute="top" secondItem="pID-pJ-9uY" secondAttribute="topMargin" constant="7" id="FhX-Th-MaD"/>
+                                        <constraint firstItem="twq-RD-azg" firstAttribute="leading" secondItem="pID-pJ-9uY" secondAttribute="leadingMargin" id="Shh-0O-xWl"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="idLabel" destination="IN2-E1-RDy" id="9x1-2g-Bg0"/>
+                                    <outlet property="nameLabel" destination="4PI-ej-hZV" id="zuF-3T-0bp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Pa-1y-Lhl" id="Sg6-Ko-0lg"/>
+                            <outlet property="delegate" destination="9Pa-1y-Lhl" id="6Ns-2y-xzp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Members" id="QN2-H4-qJR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="5W6-tY-r1R"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4vQ-Xa-JTO">
+                            <connections>
+                                <segue destination="Ly6-IJ-mYI" kind="show" id="1Cp-pf-95I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mV-H1-HLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.8" y="132.68365817091455"/>
         </scene>
         <!--Add Member-->
         <scene sceneID="A5z-CW-Bjf">
@@ -191,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTZ-ZT-xY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="-247.82608695652175"/>
+            <point key="canvasLocation" x="2236" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EH8-bA-8ms">

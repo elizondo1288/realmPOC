@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddMemberViewController: UIViewController {
 
@@ -16,6 +17,17 @@ class AddMemberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let members = MemberManager.sharedInstance.returnAllMembers() else { return }
+        
+        for member in members {
+            print(member.name)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,9 +39,9 @@ class AddMemberViewController: UIViewController {
         
         guard let name = nameLabel.text else { return }
         guard let lastName = lastNameLabel.text else { return }
-        guard let id = Int(idLabel.text!) else { return }
+        guard let id = idLabel.text else { return }
         
-        let member = Member(name,lastName,NSNumber.init(value: id))
+        let member = Member(name,lastName,id)
         MemberManager.sharedInstance.addMember(member)
         
         DispatchQueue.main.async {

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MemberManager: NSObject {
 
     static let sharedInstance = MemberManager()
     var members : [Member] = [Member]()
-
+    let realm = try! Realm()
+    
     private override init() {}
     
     func addMember(_ member : Member) {
@@ -22,17 +24,28 @@ class MemberManager: NSObject {
         }
         
         if newList.count > 0 {
-            print("error ya existe")
+            print("Miembro ya existe")
         } else {
-            members.append(member)
-            print(members)
+            try! realm.write {
+                realm.add(member)
+                members.append(member)
+            }
         }
     }
     
+    func returnAllMembers() -> [Member]? {
+        let membs = realm.objects(Member.self)
+        members = Array(membs)
+        return members
+    }
+    
+    func removeMemberUsingID(_ id : String){
+        print("removing member \(id)")
+    }
+    
     func removeMember(_ member : Member) {
-        
-        members = members.filter { (mem) -> Bool in
-            return member.id != mem.id
+        try! realm.write {
+            realm.delete(member)
         }
     }
     
