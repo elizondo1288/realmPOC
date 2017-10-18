@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
         case .addMember:
             self.performSegue(withIdentifier: "addMemberSegue", sender: nil)
         case .createTeams:
-            print("")
+            self.performSegue(withIdentifier: "teamsSegue", sender: nil)
         case .shuffleTeams:
             print("")
         }

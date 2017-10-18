@@ -28,7 +28,6 @@ class MemberManager: NSObject {
         } else {
             try! realm.write {
                 realm.add(member)
-                members.append(member)
             }
         }
     }
@@ -37,10 +36,6 @@ class MemberManager: NSObject {
         let membs = realm.objects(Member.self)
         members = Array(membs)
         return members
-    }
-    
-    func removeMemberUsingID(_ id : String){
-        print("removing member \(id)")
     }
     
     func removeMember(_ member : Member) {

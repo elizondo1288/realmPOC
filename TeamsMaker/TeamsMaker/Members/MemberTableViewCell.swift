@@ -21,8 +21,4 @@ class MemberTableViewCell: UITableViewCell {
         idLabel.text = member.id
         nameLabel.text = "\(member.name) \(member.lastName)"
     }
-
-    @IBAction func deleteUser(_ sender: Any) {
-        MemberManager.sharedInstance.removeMemberUsingID(idLabel.text!)
-    }
 }
