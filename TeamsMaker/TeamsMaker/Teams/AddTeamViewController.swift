@@ -34,7 +34,12 @@ class AddTeamViewController: UIViewController {
     }
     
     @IBAction func saveTeam(_ sender: Any) {
-        
+        let color = teamColorView.backgroundColor
+        let team = Team(nameText.text!, NSString(format:"#%06x", color!) as String, membs: [Member]())
+        TeamManager.sharedInstance.addTeam(team)
+        DispatchQueue.main.async {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     
@@ -48,7 +53,7 @@ extension AddTeamViewController {
         let b = randomCGFloat()
         let color = UIColor(red: r, green: g, blue: b, alpha: 1)
         
-        print(String(describing: color))
+        print(NSString(format:"#%06x", color))
         DispatchQueue.main.async {
             self.teamColorView.backgroundColor = color
         }

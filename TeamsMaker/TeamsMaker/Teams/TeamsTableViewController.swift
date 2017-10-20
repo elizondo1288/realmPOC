@@ -17,29 +17,38 @@ class TeamsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return fakeAmmount
+        guard let count = TeamManager.sharedInstance.returnAllTeams()?.count else { return 0}
+        return count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "teamCell")
-        cell.textLabel?.text = "Ejemplo"
-        cell.detailTextLabel?.text = "Subtitle"
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "teamCell")
+        let team = TeamManager.sharedInstance.teams[indexPath.row]
+        cell.textLabel?.text = team.name
+        let color  = team.color!
+        
+        DispatchQueue.main.async {
+            cell.textLabel?.backgroundColor = .white
+            cell.backgroundColor = UIColor(hexString: color)
+        }
         return cell
     }
     
@@ -52,9 +61,9 @@ class TeamsTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            fakeAmmount = fakeAmmount - 1
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            let team = TeamManager.sharedInstance.teams[indexPath.row]
+            TeamManager.sharedInstance.removeTeam(team)
+            tableView.deleteRows(at: [indexPath], with: .bottom)
         }
     }
 }
