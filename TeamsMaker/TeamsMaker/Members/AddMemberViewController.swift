@@ -25,13 +25,12 @@ class AddMemberViewController: UIViewController {
     }
     
     @IBAction func saveMember(_ sender: Any) {
-        
         guard let name = nameLabel.text else { return }
         guard let lastName = lastNameLabel.text else { return }
         guard let id = idLabel.text else { return }
         
         let member = Member(name,lastName,id)
-        MemberManager.sharedInstance.addMember(member)
+        MemberManager.shared.add(member)
         
         DispatchQueue.main.async {
             _ = self.navigationController?.popViewController(animated: true)

@@ -29,14 +29,13 @@ class MembersTableViewController: UITableViewController {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = MemberManager.sharedInstance.returnAllMembers()?.count else { return 0}
-        return count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {        
+        return MemberManager.shared.returnAll().count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath) as! MemberTableViewCell
-        let member = MemberManager.sharedInstance.members[indexPath.row]
+        let member = MemberManager.shared.members[indexPath.row]
         cell.customizeCell(member)
         return cell
     }
@@ -47,8 +46,8 @@ class MembersTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let member = MemberManager.sharedInstance.members[indexPath.row]
-            MemberManager.sharedInstance.removeMember(member)
+            let member = MemberManager.shared.members[indexPath.row]
+            MemberManager.shared.remove(member)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

@@ -9,16 +9,16 @@
 import UIKit
 import RealmSwift
 
-class TeamManager: NSObject {
+class TeamManager: DatabaseProtocol {
     
-    static let sharedInstance = TeamManager()
+    static let shared = TeamManager()
     var teams = [Team]()
     let realm = try! Realm()
 
-    private override init() {}
+    private init() {}
     
-    func addTeam(_ team : Team) {
-        
+    func add(_ object : AnyObject) {
+        let team = object as! Team
         let newList = teams.filter { (tm) -> Bool in
             return team.name == tm.name
         }
@@ -32,13 +32,14 @@ class TeamManager: NSObject {
         }
     }
     
-    func returnAllTeams() -> [Team]? {
+    func returnAll() -> [AnyObject] {
         let tms = realm.objects(Team.self)
         teams = Array(tms)
         return teams
     }
     
-    func removeTeam(_ team : Team) {
+    func remove(_ object: AnyObject) {
+        let team = object as! Team
         try! realm.write {
             realm.delete(team)
         }

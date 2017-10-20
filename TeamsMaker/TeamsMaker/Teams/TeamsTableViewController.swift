@@ -10,9 +10,6 @@ import UIKit
 
 class TeamsTableViewController: UITableViewController {
 
-    
-    var fakeAmmount = 5
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = true
@@ -34,14 +31,13 @@ class TeamsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = TeamManager.sharedInstance.returnAllTeams()?.count else { return 0}
-        return count
+        return TeamManager.shared.returnAll().count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "teamCell")
-        let team = TeamManager.sharedInstance.teams[indexPath.row]
+        let team = TeamManager.shared.teams[indexPath.row]
         cell.textLabel?.text = team.name
         let color  = team.color!
         
@@ -61,8 +57,8 @@ class TeamsTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let team = TeamManager.sharedInstance.teams[indexPath.row]
-            TeamManager.sharedInstance.removeTeam(team)
+            let team = TeamManager.shared.teams[indexPath.row]
+            TeamManager.shared.remove(team)
             tableView.deleteRows(at: [indexPath], with: .bottom)
         }
     }

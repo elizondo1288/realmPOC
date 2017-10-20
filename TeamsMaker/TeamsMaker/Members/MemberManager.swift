@@ -9,16 +9,15 @@
 import UIKit
 import RealmSwift
 
-class MemberManager: NSObject {
-
-    static let sharedInstance = MemberManager()
+class MemberManager: DatabaseProtocol {
+    static let shared = MemberManager()
     var members : [Member] = [Member]()
     let realm = try! Realm()
     
-    private override init() {}
+    private init() {}
     
-    func addMember(_ member : Member) {
-        
+    func add(_ object: AnyObject) {
+        let member = object as! Member
         let newList = members.filter { (mem) -> Bool in
             return member.id == mem.id
         }
@@ -32,16 +31,16 @@ class MemberManager: NSObject {
         }
     }
     
-    func returnAllMembers() -> [Member]? {
+    func returnAll() -> [AnyObject] {
         let membs = realm.objects(Member.self)
         members = Array(membs)
         return members
     }
     
-    func removeMember(_ member : Member) {
+    func remove(_ object: AnyObject) {
+        let member = object as! Member
         try! realm.write {
             realm.delete(member)
         }
     }
-    
 }
