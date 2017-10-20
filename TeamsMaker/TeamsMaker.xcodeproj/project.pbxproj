@@ -169,7 +169,6 @@
 			children = (
 				201E3D9E1F9A5029001ED8D0 /* Helpers */,
 				201E3D8D1F97ECB0001ED8D0 /* Teams */,
-				201E3D8C1F97ECAA001ED8D0 /* New Group */,
 				201E3D851F97BE83001ED8D0 /* Members */,
 				201E3D6B1F900459001ED8D0 /* Home */,
 				201E3D721F9006BB001ED8D0 /* Entities */,
@@ -236,13 +235,6 @@
 				201E3D891F97C37C001ED8D0 /* MemberTableViewCell.swift */,
 			);
 			path = Members;
-			sourceTree = "<group>";
-		};
-		201E3D8C1F97ECAA001ED8D0 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		201E3D8D1F97ECB0001ED8D0 /* Teams */ = {
